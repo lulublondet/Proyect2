@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de datos</title>
+</head>
+<body>
+
+	<h1 align="center">Formulario de datos</h1>
+	
+	<form action="">
+
+		<label for="nombre">Nombre</label><br/>
+			<input id="nombre" type="text" required="required"><br/><br/>
+		
+		<label for="apellido">Apellido</label><br/>
+			<input id="apellido" type="text"><br/><br/>
+
+		<label for="telefono">Teléfono</label><br/>
+			<input id="telefono" type="text"><br/><br/>
+
+		<label for="dropdown">Escoge tu carro para continuar</label><br/><br/>
+			<select name="dropdown" id="dropdown" required="required">
+				<option value="">Escoge tu Carro</option>
+				<option value="1">Volvo</option>
+				<option value="2">Saab</option>
+				<option value="3">Mercedes</option>
+				<option value="4">Audi</option>
+			</select>
+
+
+	<p>
+		<label for="email">Email</label><br/>
+		<input type="email" name="email" required="required">
+	</p>
+
+	<p>
+		<label for="pw">Crea tu Contraseña</label><br/>
+		<input type="password" name="pw" pattern = ".{6,}" title="6 o mas caracteres" required="required">
+	</p>
+
+	<p>
+		<input type="submit" name="" value="send">
+	</p>
+
+	</form>
+
+	<script src="main.js"></script>
+</body>
+</html>
