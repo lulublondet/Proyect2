@@ -3,45 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Formulario de datos</title>
+
 </head>
 <body>
 
-	<h1 align="center">Formulario de datos</h1>
+	<h1>Formulario de datos</h1>
 	
-	<form action="">
+	<form action="" name="formulario" method="post">
 
 		<label for="nombre">Nombre</label><br/>
-			<input id="nombre" type="text" required="required"><br/><br/>
+			<input type="text" name="elemento" id="nombre" maxlength="30" pattern="^[a-zA-Z_áéíóúñ]*$" required title="Ingrese solo letras" placeholder="Ingrese su Nombre"><br><br>
+			
 		
 		<label for="apellido">Apellido</label><br/>
-			<input id="apellido" type="text"><br/><br/>
+			<input type="text" name="elemento" id="apellido" maxlength="30" pattern="^[a-zA-Z_áéíóúñ]*$" required title="Ingrese solo letras" placeholder="Ingrese su Apellido"><br><br>
+			
 
 		<label for="telefono">Teléfono</label><br/>
-			<input id="telefono" type="text" required="required" pattern="[0-9]{9}" maxlength="9"><br/><br/>
-
+		<input type="text" name="elemento" id="telefono" maxlength="7" pattern="^\d{7}$" required title="Ingrese solo numeros" placeholder="9999999"><br><br>
+			
 		<label for="dropdown">Escoge tu carro para continuar</label><br/><br/>
-			<select name="dropdown" id="dropdown" required="required">
+
+			<select name="dropdown" id="dropdown">
 				<option value="">Escoge tu Carro</option>
 				<option value="1">Volvo</option>
 				<option value="2">Saab</option>
 				<option value="3">Mercedes</option>
 				<option value="4">Audi</option>
-			</select>
+			</select><br/><br/>
 
 
-	<p>
+
+		
 		<label for="email">Email</label><br/>
-		<input type="email" name="email" required="required">
-	</p>
+		<input type="email" name="elemento" id="email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" required placeholder="nombre@domain.com"><br/><br/>
+	
 
-	<p>
+
 		<label for="pw">Crea tu Contraseña</label><br/>
-		<input type="password" name="pw" pattern = ".{6,}" title="6 o mas caracteres" required="required">
-	</p>
+		<input type="password" name="elemento" id="pw" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required title="Su clave no es segura requiere minimo 8 caracteres"><br/><br/>
+	
 
-	<p>
-		<input type="submit" name="" value="send">
-	</p>
+	
+		<input type="submit" name="boton" id="boton" value="send">
+	
 
 	</form>
 
