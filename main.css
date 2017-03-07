@@ -1,0 +1,25 @@
+
+body {
+	font-family: arial;
+	font-size: 15px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+div{
+
+	display: block;
+	border-style: solid;
+	width: 400px;
+	height: 500px;
+	background: #f7e6ff;
+	
+}
+footer {
+
+	
+	display: block;
+	font-family: arial;
+	font-size: 10px;
+}
